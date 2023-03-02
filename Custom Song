@@ -1,1 +1,37 @@
+horror_scream = "C:/Users/Leah Sosa/Downloads/Horror Girl Screaming - Sound Effect.wav"
+sample horror_scream
+sleep 3
+# Welcome to Sonic Pi
+use_synth :sine
+use_bpm 72
+play :e5
+sleep 0.5
+play :g5
+sleep 0.5
+play :e5
+sleep 0.5
+play :g5
+sleep 0.5
+play :e5
+sleep 0.5
+play :g5
+sleep 0.5
+play :e5
+sleep 0.5
+
+use_synth :sine
+play :g5, amp:1
+sleep 0.5
+play :c4, amp:1
+sleep 0.5
+play :e5, amp:1
+sleep 0.5
+play :c4, amp:1
+sleep 0.5
+play :g5, amp:1
+sleep 0.5
+play :e5, amp:1
+sleep 0.5
+play :g5, amp:1
+
 
