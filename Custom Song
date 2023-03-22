@@ -4,34 +4,32 @@ sleep 3
 # Welcome to Sonic Pi
 use_synth :sine
 use_bpm 72
-play :e5
-sleep 0.5
-play :g5
-sleep 0.5
-play :e5
-sleep 0.5
-play :g5
-sleep 0.5
-play :e5
-sleep 0.5
-play :g5
-sleep 0.5
-play :e5
-sleep 0.5
-
-use_synth :sine
-play :g5, amp:1
-sleep 0.5
-play :c4, amp:1
-sleep 0.5
-play :e5, amp:1
-sleep 0.5
-play :c4, amp:1
-sleep 0.5
-play :g5, amp:1
-sleep 0.5
-play :e5, amp:1
-sleep 0.5
-play :g5, amp:1
+6.times do
+  play :e5
+  sleep 0.5
+  play :g5
+  sleep 0.5
+end
+4.times do
+  play :d5
+  sleep 0.5
+  play :g5
+  sleep 0.5
+  2.times do
+    use_synth :sine
+    use_bpm 72
+    play :c4
+    sleep 1
+    play :g3
+    play :b3
+    play :e4
+    sleep 1
+    play :c2
+    sleep 1
+    play :g3
+    play :c4
+    play :e4
+  end
+end
 
 
